@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+    h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px Slateblue;
+}
+    h1{
+        
+text-decoration: underline;
+font-family: monospace;
+font-size: 45px;
+text-align: center;
+}
+    a
+{
+color: slateblue;
+}
+    #grad1 {
+  height: 200px;
+  background-color: red; 
+  background-image: linear-gradient(to right, SlateBlue , Fuchsia);
+}
+</style>
+</head>
+
+<body style="background-color:gainsboro">
+    <h1 style="color:rgb(255,250,240);">Food Inspiration</h1>
+<div id="grad1"></div>
+
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="foto8.jpg" style="width:100%">
+  <img class="mySlides" src="foto4.jpg" style="width:100%">
+  <img class="mySlides" src="foto3.jpg" style="width:100%">
+<img class="mySlides" src="foto9.jpg" style="width:100%">
+
+    <p>Hier nog wat extra foto's van eten :). </p>
+
+
+
+
+</div>
+    
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    
+    <p> Wil jij nu de beste chocolate chip cookies willen maken? Bekijk dan zeker dit filmpje!</p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/PFJAuAWxuvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    <br>
+    <br>
+    <p><a href="index.html">Start</a></p>
+    <P><a href="foto_s%20(1).html">Pictures</a></P>
+
+</body>
+</html>
